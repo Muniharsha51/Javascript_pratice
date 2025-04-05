@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // ------------------------------------------------------OBJECT NAME PRINTIG(CALL METHOD)-----------------------------------
+// function userinfo(){
+    
+//     return console.log(`${this.name} and ${this.email}`)
+// }
+
+// let person={
+//         name:"harsha",
+//         email:"h@gmail.com"
+//     }
+    
+// userinfo.call(person)
+
+
+// function userinfo(){
+//     let person={
+//         name:"harsha",
+//         email:"harsha@gmail.com"
+//     }
+//     return console.log(` Hello ${person.name} and ${person.email}`)
+// }userinfo()
+
+
+
+// -------------------------------------------------------QUESTION:2-----------------------------------------------------------------------
+// var a=-321
+// var b=a.toString()
+// var c=""
+// if(a<0){
+//     c+="-"
+// }
+// for(i=b.length-1;i>0;i--){
+    
+//     c+=parseInt(i)
+// }
+// console.log(c);
+
+// -------------------------------------------------------QUESTION:2-----------------------------------------------------------------------
+// var num=674547713
+// var string=num.toString()
+// var array=[]
+// for(i=0;i<string.length;i++){
+//     array.push(parseInt(string[i]))
+// }                                      //console.log(array)
+// var sorted=array.sort()                //console.log(sorted);
+// var ln=sorted.length-2                 //console.log(ln);
+// var count=0
+// for(j=0;j<sorted.length;j++){
+//     if(ln==sorted[j]){
+//     count++
+// }
+// }                                       //console.log(count);
+// for(k=0;k<sorted.length;k++){
+//     if(k==count){
+//         console.log(true);
+//     }
+//     // else{
+//     //     console.log(false);
+//     // }
+    
+// }
+
+// -------------------------------------------------------QUESTION:2-----------------------------------------------------------------------
+// let n = 5;
+// let string = "";
+// let string1="";
+// for (let i = 1; i <= n; i++) {
+//     for(k=1;k<=i;k++){
+//         string1+=k
+//     }
+//     console.log(string1);
+    
+
+
+//     for (let j = 0; j < i; j++) {
+//         string += String.fromCharCode(j + 65);
+//     }
+//     string += "\n";
+// }
+// console.log(string1.concat(string));
+
+// -------------------------------------------------------QUESTION:2-----------------------------------------------------------------------
+// let rows = 4;
+// let result = '';
+
+// for (let i = 1; i <= rows; i++) {
+//   let line = '';
+//   for (let j = 1; j <= i; j++) {
+//     if (i % 2 !== 0) {
+//       line += j;
+//     } else {
+//       if (j % 2 !== 0) {
+//         line += j;
+//       } else {
+//         line += String.fromCharCode(96 + j).toUpperCase();
+//       }
+//     }
+//   }
+//   result += line + '\n';
+// }
+
+// console.log(result);
+
+
+
+// -------------------------------------------------------------------anagram series---------------------------------------------------
+
+// Input strings
+// const string1 = "listen";
+// const string2 = "silent";
+
+
+// if (string1.length !== string2.length) {
+//     console.log(`${string1} and ${string2} are not anagrams.`);
+// } else {
+    
+//     const sortedString1 = string1.split('').sort().join('');
+//     const sortedString2 = string2.split('').sort().join('');
+
+//     if (sortedString1 === sortedString2) {
+//         console.log(`${string1} and ${string2} are anagrams.`);
+//     } else {
+//         console.log(`${string1} and ${string2} are not anagrams.`);
+//     }
+// }
+
+// ---------------------------------------------------------------Non-Fibonacci Series---------------------------------------------------------
+
+// let i = 0, j = 1, k, m, no, b = new Array(10);
+
+// no = 8;
+// b[1] = 0;
+// b[2] = 1;
+
+// if (no <= 1) {
+// 	console.log("You have enter a wrong range");
+// }
+
+// else if (no <= 5 && no > 1) {
+// 	document.write("</br>","There is not any Non-Fibonacci series that lies between 1 to " + no + " term of Fibonacci Series.");
+// }
+
+// else {
+
+// 	for (m = 2; m < no; m++) {
+// 		k = i + j;
+// 		i = j;
+// 		j = k;
+
+// 		b[m] = k;
+// 	}
+// 	i = 5;
+// 	document.write("</br>","The Non-Fibonacci series that lies between 1 to " + no + " term of Fibonacci Series is: ","</br>");
+
+// 		// Loop to calculate Non-Fibonacci
+// 		// series
+// 	for (let ans = 4; ans < b[no - 1]; ans++) {
+// 		if (ans != b[i])
+
+// 			// Print Non-Fibonacci Series
+// 			document.write(ans , " ");
+// 		else
+// 			i++;
+// 	}
+// }
+
+
+
+
+// ------------------------------------------------------FILTERING VALUES----------------------------------------------
+
+// var a=[-2,-1,0,2,3,4]
+// var b=a.filter((c,val)=>val>0)
+// console.log(b)
+    </script>
+</body>
+</html>

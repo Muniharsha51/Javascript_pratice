@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // -----------------------------------------------------------------Problem on array:-------------------------------------------------------------------
+        // var n=+prompt("No of persons")
+        // a=[]
+        // for(i=0;i<n;i++){
+        //     let name=prompt("Name")
+        //     let age=prompt("age")
+        //     a.push(name,age)
+        // }
+        // console.log(a);
+        // b=prompt("Name")
+        // for(i=0;i<=a.length;i++){
+        //     if(a[i]==b)
+        //     console.log(a[i+1]);
+        // }
+
+    // -----------------------------------------------------------------Problem on sum of elements in an array:--------------------------------------------------------
+        // var a=[2,24,1,92,20,19,3]
+        // target=22
+        // big=[]
+        // function find (a,target){
+        //     for(i=0;i<a.length;i++){
+        //         for(j=i+1;j<a.length;j++){
+        //             if(a[i]+a[j]==target){
+        //                 big.push([a[i],a[j]])
+                        
+        //             }
+        //         }
+        //     }
+        //     return big
+            
+        // }
+        // arr=find(a,target);
+        // for(i of arr){
+        //     s=''
+        //     for(j of i){
+        //         s=s+j+" "
+        //     }
+        //     console.log(s)
+        // }
+
+// -----------------------------------------------------------------Problem on String:-------------------------------------------------------------------
+        // var a="abcdefghijklmnopqrstuvwxyz"
+        // var b="lakshmi"
+        // // output:"mbltinj"
+        // var c=""
+        // for(i=0;i<b.length;i++){
+        //     for(j=0;j<a.length;j++){
+        //         if(a[j]==b[i]){
+        //             c=c+a[j+1]
+        //         }
+        //     }
+        // }
+        // console.log(c);
+
+
+    // -----------------------------------------------------------------Problem on Counts of elements in an array:--------------------------------------------------
+        // var  arr=[25,26,101,110,101,112,101]
+        // b=+prompt("Enter the number")
+        // count=0
+        // for(i=0;i<=arr.length;i++){
+        //     if(arr[i]==b){
+        //         count++
+        //     }
+        // }
+        // if(count%2==0){
+        //     console.log(`${b} is presented even no of times`);
+        // }
+        // else{
+        //     console.log(`${b}  is presented odd no of times`);
+        // }
+
+
+        // -----------------------------------------------------------------Problem on Counts of elements in an array:--------------------------------------------------
+        // var arr=[50,70,120,80,-81,-81]
+        // var a=5
+        // var b=1
+        // var c=0
+        // for(i=1;i<=a;i++){
+        //     b=b*i
+        // }
+        
+        // for(j=0;j<=arr.length;j++){
+        //     if(arr[j]==b){
+        //         c=j+1
+        //     }
+        // }
+        
+        // console.log(`5 factorial is at ${c} position`);
+
+        // -----------------------------------------------------------------Problem on que and dupilicate in an array:--------------------------------------------------
+        // var arr=[12,28,34,56,28,1,34]
+        // var x=[]
+        // var y=[]
+        // var z=[]
+        // var c=0;
+        // var count=0;
+        // for(i=0;i<=arr.length;i++){
+        //     for(j=0;j<=x.length;j++){
+        //         if(arr[i]==x[i]){
+        //             c=c+1
+        //         }
+        //     }
+        // }
+        // if(c==0){
+        //     x.push(a[i])
+        // }
+        // console.log(x);
+
+//         function removeDuplicates(inputArray) {
+//   var outputArray = [];
+
+//   for (var i = 0; i < inputArray.length; i++) {
+//     var currentValue = inputArray[i];
+//     var isDuplicate = false;
+
+//     // Check if currentValue is already in outputArray
+//     for (var j = 0; j < outputArray.length; j++) {
+//       if (currentValue === outputArray[j]) {
+//         isDuplicate = true;
+//         break;
+//       }
+//     }
+
+//     // If not a duplicate, add it to outputArray
+//     if (!isDuplicate) {
+//       outputArray.push(currentValue);
+//     }
+//   }
+
+//   return outputArray;
+// }
+
+// var input = [12, 28, 34, 56, 28, 1, 34];
+// var output = removeDuplicates(input);
+
+// console.log(output); // Output: [12, 28, 34, 56, 1]
+
+// -----------------------------------------------------------------REVRSE THE LOWERCASE ELEMENTS IN AN GIVEN STRING--------------------------------------------------
+
+// var a="HaRsHa"
+// var b=""
+// var c=""
+// for(i=0;i<a.length;i++){
+//     if(a[i]==a[i].toLowerCase()){
+//         b+=a[i]
+//     }
+    
+// }
+// console.log(b)
+// for(j=b.length-1;j>=0;j--){
+//     c+=b[j]
+// }
+// console.log(c)
+
+// -----------------------------------------------------------------COUNT OF FIRST DUPLICATE ELEMENTS IN A ARRAY-----------------------------------------------------
+
+// var arr=[10,24,34,56,10,34,24]
+// var a=[]
+// var count=0
+// for(i=0;i<=arr.length;i++){
+//     for(j=i+1;j<=arr.length;j++){
+//         if(arr[i]==arr[j]){
+//             a.push(arr[i])
+//         }
+//     }
+// }
+// console.log(a);
+
+// for(k=0;k<=arr.length;k++){
+//     if(arr[k]==a[0]){
+//         count=count+1
+//     }
+// }
+// console.log(`count of first dupilacate numbers ${count}`);
+
+// -----------------------------------------------------------------SUM OF DUPLICATE ELAMENTS IN AN ARRAY-----------------------------------------------------
+
+
+// arr=[12,28,34,56,28,1,34]
+// dup=[]
+// sum=0
+// for(i=0;i<=arr.length;i++){
+//     for(j=i+1;j<=arr.length;j++){
+//         if(arr[i]==arr[j]){
+//             dup.push(arr[i])
+//         }
+//     }
+// }
+// console.log(dup)
+
+// var dup=[28,34]
+// for(k=0;k<dup.length;k++){
+//     sum+=dup[k]
+// }
+// console.log(sum)
+
+
+
+// var arr=[1,2,3,4,5,6]
+// console.log(arr.push(1));
+
+
+
+
+
+
+
+//  --------------------------------------sum of second smallest number and second largest number --------------------------
+//  var a=[4,3,1,2,5,7]
+
+//  for(i=0;i<a.length;i++){
+//     for(j=i+1;j<a.length;j++){
+//         if((a[i]>a[j])){
+//             [a[i],a[j]]=[a[j],a[i]]
+//         }
+//     }
+//  }
+//  console.log(a);//after sorting 
+// console.log(a[1]+a[a.length-2]);
+
+// console.log(a[1]);
+// console.log(a[a.length-2]);
+// console.log();
+
+
+
+// let arr=[12,24,65,81,7,81]
+//  let fl=0
+//  let sl=0
+//  for(i=0;i<arr.length;i++){
+//      if(arr[i]>fl){
+//          sl=fl
+//          fl=arr[i]
+//      }
+//  }
+//  console.log(sl)
+
+
+
+
+// --------------------------------------------Example for callback function--------------------------------------------------------
+
+// function greet(name, callback) {
+//   console.log('Hello, ' + name + '!');
+//   callback(); // Execute the callback function
+// }
+
+// function sayGoodbye() {
+//   console.log('Goodbye!');
+// }
+
+// greet('harsha', sayGoodbye);
+
+
+
+
+// --------------------------------------------Example for await/async ------------------------------------------------------------------
+// async function greetAsync(name) {
+//   return 'Hello, ' + name + '!';
+// }
+
+// // Using the async function with await
+// async function greetUser() {
+//   const result = await greetAsync('John');
+//   console.log(result);
+// }
+
+// // Call the async function
+// greetUser();
+
+
+
+// --------------------------------------------Example for HOF ------------------------------------------------------------------
+
+// Callback function, passed as a parameter in the higher order function
+// function callbackFunction(){
+//     console.log('I am  a callback function');
+// }
+
+// // higher order function
+// function higherOrderFunction(func){
+//     console.log('I am higher order function')
+//     func()
+// }
+
+// higherOrderFunction(callbackFunction);
+
+
+
+
+// var a=[1,2,4,5]
+// var b=""
+// for(i=0;i<a.length;i++){
+//     if(a[i]!==i+1){
+//         b=i+1
+//     }
+// }
+// console.log(b-1)
+
+// --------------------------------------problems on pattern printing------------------------------
+
+
+//Q.   * 
+//    * * 
+//   * * * 
+//  * * * * 
+
+
+// let r=4;
+// for(i=1;i<=r;i++){
+//     var s=""
+//     for(j=1;j<=r-i;j++){
+//         s=s+" "
+//     }
+//     var star=""
+//     for(k=1;k<=i;k++){
+//     star+="* "
+
+// }
+// console.log(s+star);
+// }
+
+
+
+
+
+// var r=5;
+// for(i=1;i<=r;i++){
+//     s=""
+//     for(j=1;)
+// }
+
+
+
+
+
+// const n = 5;
+// const c = "+";
+
+// for (let i = 1; i <= n; i++) {
+//   let sum = 0;
+//   let output = '';
+//   for (let j = 1; j <= i; j++) {
+//     sum+=1;
+//     output += c;
+//   }
+//   output += sum;
+//   console.log(output);
+// }
+
+
+
+
+
+
+// -----------------------------------------------JS runtime enviornment pratice-------------------------------
+// debugger;
+// console.log("harsha");
+// console.log("vardhan");
+// setTimeout(()=>{
+//     console.log("muni");
+// },5000)
+// console.log("arcot");
+
+
+
+// debugger;
+// let rows = 5;
+// let pattern = "";
+// for (let n = 1; n <= rows; n++) {
+//    for (let num = 1; num <= n; num++) {
+//       pattern += num;
+//    }
+//    pattern += "\n";  
+// }
+// console.log(pattern);
+
+// Q.
+// *
+// **
+// ***
+// ****
+// *****
+// var r=5
+// var p=""
+// for(i=1;i<=r;i++){
+//     for(j=1;j<=i;j++){
+//         p+="*"
+//     }
+//     p+="\n"
+// }
+// console.log(p);
+
+// var r=5
+// var p=""
+// for(i=1;i<=r;i++){
+//     for(j=1;j<=r-1;j--){
+//         p+=""
+//     }
+// }
+
+
+
+// Q.
+//     *  
+//    **
+//   ***
+//  ****
+//  @@@@@
+
+// debugger;
+
+// var r=4;
+// for(i=1;i<=r;i++){
+//     var p=""
+//     for(j=1;j<=r-i;j++){
+//         p+=" "
+//     }
+//     for(k=1;k<=i;k++){
+//         p+="*"
+//     }
+//     console.log(p);
+//     var a=""
+    
+// }
+// for(l=1;l<=5;l++){
+//         a+="@"
+//     }
+//     console.log(a);
+
+
+
+// r=4
+
+// * 3 2 1
+// * 3 2 
+// * 3
+// *
+// r = 3
+
+// * 2 1
+// * 2
+// *
+
+// var r=4
+// var p=""
+// for(i=1;i<=r;i++){
+//     for(j=1;j<2;j++){
+//         p+="*"
+//     }
+//     for(k=r;k=)
+// }
+
+// debugger;
+// let a=[{name:"harsha",password:"hashavardhan"},{name:"vardhan",password:"muniharsha"}]
+// var b=""
+// for(i=0;i<a.length;i++){
+   
+// }
+// console.log(a[i].name)
+
+// var a=[{name:"harsha",age:25},{name:"vardhan",age:22},{name:"vardhan",age:20}]
+// var b=0
+// for(i=0;i<=a.length;i++){
+//  b+=a[i].age
+// }
+// console.log(b);
+
+
+// -----------------------------------------------missing number problem-----------------------------------------------------------------
+
+// -------------------------------entire array----------------
+// var a=[1,2,3,5,6]
+// var b=[]
+// for(i=0;i<=a.length;i++){
+//     b.push(a[i])
+//     if(i<a.length-1&&a[i+1]-a[i]>1){
+//         b.push(a[i]+1)
+//     }
+// }
+// console.log(b);
+
+// ----------------------------------only missed number---------
+// var a=[1,2,3,5,6]
+// var b=[]
+// for(i=0;i<=a.length;i++){
+//     if(i<a.length-1&&a[i+1]-a[i]>1){
+//         b.push(a[i]+1)
+//     }
+// }
+// console.log(b);
+
+// var str=222
+// var b=0
+// for(i=0;i<=a.length;i++){
+//     for(j=0;j<=a[i].length;j++){
+//         b+=j
+//     }
+// }
+// console.log(b);
+
+
+// -------------------------------------------------------------find the sum of characters in a number-----------------------------------------------------------------
+// ------------------------------------Method-1---------------
+// function sumOfDigits(number) {
+//   const a = Math.abs(number).toString();
+//   let sum = 0;
+//   for (let i = 0; i < a.length; i++) {
+//     sum += parseInt(a[i]);
+//   }
+
+//   return sum;
+// }
+// console.log(sumOfDigits(222));
+
+
+
+// Example usage:
+// const number = 12345;
+// const result = sumOfDigits(number);
+// console.log(`Sum of digits in ${number}: ${result}`);
+
+// ------------------------------------Method-2---------------------
+// var a=1234
+// var b=Math.abs(a).toString()
+// var sum=0
+// for(i=0;i<b.length;i++){
+//     sum=sum+parseInt(b[i])
+// }
+// console.log(sum);
+
+
+// ----------------------------------------------------------find the sum of characters in a number-----------------------------------------------------------------
+// const element = document.createElement('div');
+// element.innerText = '<h1>Hello, world! hello123</h1>';
+// document.body.appendChild(element);
+
+
+// const element1 = document.createElement('div');
+// element1.innerHTML = '<h1>Hello, world! hello123</h1>';
+// document.body.appendChild(element1);
+
+// ---------------------------------------------------------find the even index in a string in a array-----------------------------------------------------------------
+// Q.const a=["ravi","ramesh"] o/p:- ["rv","rms"]
+
+// const a = ["ravi", "ramesh"];
+// var c = [];
+// for (let i=0;i<a.length;i++) {
+//     var b = "";
+//     for (let j=0;j<a[i].length;j++) {
+//         if (j%2===0) {
+//             b = b + a[i][j];
+//         }
+//     }
+//     c.push(b);
+// }
+// console.log(c);
+
+
+
+// -----------------------------------------------------------------Pattern Printing:-------------------------------------------------------------------
+// Q. 11
+//    123
+//    1236
+//    123410
+
+// Sol: 
+ 
+// let a = 4;
+// for (let i = 1; i <= a; i++) {
+//     let sum = 0;
+//     let output = '';
+//     for (let j = 1; j <= i; j++) {
+//         sum += j;
+//         output += j;
+//     }
+//     console.log(output + sum);
+// }
+
+
+// -----------------------------------------------------------------Fibonacci Series:-------------------------------------------------------------------
+// const number = parseInt(prompt('Enter the number of terms: '));
+// let n1 = 0, n2 = 1, fb;
+
+// console.log('Fibonacci Series:');
+
+// for (let i = 1; i <= number; i++) {
+    
+//     fb = n1 + n2;
+//     n1 = n2;
+//     n2 = fb;
+//     console.log(n1);
+// }    
+
+
+
+// var a=0,b=1,c;
+// var num=7
+// var fi=[]
+// for(i=1;i<=num;i++){
+//     c=a+b;
+//     a=b;
+//     b=c;
+//     fi.push(a)
+// }console.log(fi);
+
+
+// -----------------------------------------------------------------Pattern printing:-------------------------------------------------------------------
+// 1*
+// 2**
+// 3***
+// 4****
+// 5*****
+
+// r=5
+// for(i=1;i<=r;i++){
+//     s=""
+    
+//     for(k=5;k<=0;k--){
+//         s=s+" "
+//     }
+    
+    
+//     console.log(i+s);
+// }
+
+// var r=4
+// for(i=0;i<=r;i++){
+//     p=""
+//     for(j=4;j>=1;j--){
+//         p=p+j
+//     }
+//     p=p+"\n"
+//     console.log(p);
+// }
+
+
+// -----------------------------------------------------------------Even values :-------------------------------------------------------------------
+// const a = ["ravi", "ramesh"];
+// var c = [];
+// for (let i=0;i<a.length;i++) {
+//     var b = "";
+//     for (let j=0;j<a[i].length;j++) {
+//         if (j%2===0) {
+//             b = b + a[i][j];
+//         }
+//     }
+//     c.push(b);
+// }
+// console.log(c);
+
+
+// -----------------------------------------------------------------Vowels:-------------------------------------------------------------------
+// var a = ["ravi", "ramesh"];
+// var b=[]
+// for(i=0;i<a.length;i++){
+//     var c=""
+//     for(j=0;j<a[i].length;j++){
+//         if(a[i][j]=="a"||a[i][j]=="e"||a[i][j]=="i"||a[i][j]=="o"||a[i][j]=="u"){
+//             c+=a[i][j]
+//         }
+//     }
+//     b.push(c)
+// }
+// console.log(b);
+
+// var a = ["ravi", "ramesh"];
+// var b = [];
+
+// for (var i = 0; i < a.length; i++) {
+//     var c = "";
+
+//     for (var j = 0; j < a[i].length; j++) {
+//         if (a[i][j] == "a" || a[i][j] == "e" || a[i][j] == "i" || a[i][j] == "o" || a[i][j] == "u") {
+//             c += a[i][j];
+//         }
+//     }
+
+//     b.push(c);
+// }
+
+// console.log(b);
+
+// -----------------------------------------------------------------Conjigetive numbers:-------------------------------------------------------------------
+// var a=[212,4567,123,321]
+// var b=a.toString()
+
+// for(i=0;i<=b.length;i++){
+    
+//     var c=[]
+//     for(j=0;j<=i.length;j++){
+//         if(j<j+1 && j+1<j+2){
+//             b.push(a[i])
+//         }
+//     }
+// }
+// console.log(c);
+
+// var a = [212, 4567, 123, 321];
+// var b = [];
+
+// for (var i = 0; i < a.length; i++) {
+//     for (var j = 0; j < a[i].toString().length - 1; j++) {
+//         if (a[i].toString()[j] < a[i].toString()[j + 1]) {
+//             b.push(a[i]);
+//         }
+//     }
+// }
+
+// console.log(b);
+
+
+
+// var a=2
+// var b=33
+// for(i=2;i<=b;i++){
+//     c=0
+//     for(j=2;j<=i;j++){
+//         if(i%j==0){
+//             c++
+//         }
+//     }
+//     if(c==1){
+//       console.log(i) 
+//     }
+// }
+
+
+
+
+// var a=[22,15,16,22,7,10,15]
+// var b=[]
+// for(i=0;i<=a.length;i++){
+//     for(j=i+1;j<=a.length;j++){
+//         if(a[i]==a[j]){
+//           b.push(a[i])  
+//         }
+//     }
+// }
+// console.log(b)
+// for(k=0;k<=b.length;k++){
+//     if()
+// }
+
+
+// var a = [212, 4567, 123, 321];
+
+// for (let i = 0; i < a.length; i++) {
+//   const numStr = a[i].toString();
+//   let isConsecutive = true;
+
+//   for (let j = 0; j < numStr.length - 1; j++) {
+//     if (parseInt(numStr[j]) + 1 !== parseInt(numStr[j + 1])) {
+//       isConsecutive = false;
+//       break;
+//     }
+//   }
+
+//   if (isConsecutive) {
+//     console.log(a[i]);
+//   }
+// }
+
+
+// -----------------------------------------------------------------Problem on String:-------------------------------------------------------------------
+// debugger;
+// var a="it was a great meeting with you"
+
+
+// for(i=0;i<a.length;i++){
+//   var b=""
+//   if(a[i].length-1=="s"){
+//     b+=a[i]
+//   }
+//   console.log(b);
+// }
+
+// var a = "it was a great meeting with you ";
+// var b = a.split(" ");
+// for (var i = 0; i < b.length; i++) { 
+//   var c = ""; 
+//   var word = b[i]; 
+  
+//   if (word[word.length - 1] === "s") { 
+//     c +=word; 
+//   }
+  
+//   console.log(c);
+// }
+
+
+// var a = "it was a great meeting with you";
+// var words = a.split(" "); // Split the string into an array of words
+
+// for (var i = 0; i < words.length; i++) { // Iterate through each word
+//   var b = ""; // Initialize an empty string inside the loop
+//   var word = words[i]; // Get the current word
+  
+//   if (word[word.length - 1] === "s") { // Check if the last character of the word is 's'
+//     b += word; // If it ends with 's', add it to the string b
+//   }
+  
+//   console.log(b); // Output the word ending with 's'
+// }
+
+
+// Q.Write a program to find the largest duplicate number in the array.
+
+
+// -----------------------------------------------------------------Sum of smallest and largest in a numner-------------------------------------------------------------------
+//  var a=5812
+//  var string=a.toString()
+//  var array=[]
+//  for(i=0;i<string.length;i++){
+//     array.push(parseInt(string[i]))
+//  }
+//  for(j=0;j<array.length;j++){
+//     for(k=j+1;k<array.length;k++){
+//         if(array[j]>array[k]){
+//             [array[j],array[k]]=[array[k],array[j]]
+//         }
+//     }
+//  }
+//  console.log(array);
+//  console.log(array[0]+array[array.length-1]);
+
+// -----------------------------------------------------------------first smallest number in a number------------------------------------------
+
+// var a=4613
+// var string=a.toString();
+// var array=[];
+// for(i=0;i<string.length;i++){
+//     array.push(parseInt(string[i]))
+// }
+// for(j=0;j<array.length;j++){
+//     for(k=j+1;k<array.length;k++){
+//         if(array[j]>array[k]){
+//             [array[j],array[k]]=[array[k],array[j]]
+//         }
+//     }
+//  }
+//  console.log(array);
+
+// console.log(array[1]);
+
+
+// -----------------------------------------------------------------\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\------------------------------------------
+
+//Q. Write a program to print how many numbers, aplhabets and special symbols are presented in the given string:
+
+// Test Case 1:
+// input: 10KCoder$
+// output: Numbers: 2
+// 	Alphabets: 6
+// 	Special Characters: 1
+
+// input: Wrold@12&3
+// output: Numbers: 3
+// 	Alphabets: 5
+// 	Special Characters: 2
+
+// function countCharacters(input) {
+//     let numbers = 0;
+//     let alphabets = 0;
+//     let specialChars = 0;
+
+//     for (let i = 0; i < input.length; i++) {
+//         const char = input[i];
+//         if (/[0-9]/.test(char)) {
+//             numbers++;
+//         } else if (/[a-zA-Z]/.test(char)) {
+//             alphabets++;
+//         } else {
+//             specialChars++;
+//         }
+//     }
+
+//     console.log("Numbers:", numbers);
+//     console.log("Alphabets:", alphabets);
+//     console.log("Special Characters:", specialChars);
+// }
+// countCharacters("10KCoder$")
+
+
+
+// -----------------------------------------------------------------Pattern printing:------------------------------------------
+
+// Q. Write a program to print your name in wave pattern based on number of rows(input)
+
+// Test Case1: 
+// input1: number of rows: 2
+// input2: Enter String: 10kcoders
+// output:
+
+// 1  k  o  e  s
+//   0  c  d  r
+
+// Test Case2: 
+// input1: number of rows: 3;'0-'
+// input2: Enter String: 10kcoders
+// output:
+
+// 1     o     s
+//  0  c  d  r
+//   k     e
+
+// function printWavePattern(rows, name) {
+//     let wavePattern = [];
+//     let currentRow = 0;
+//     let forward = true;
+
+//     // Initialize the wave pattern array with empty strings
+//     for (let i = 0; i < rows; i++) {
+//         wavePattern.push("");
+//     }
+
+//     // Loop through each character in the name
+//     for (let i = 0; i < name.length; i++) {
+//         // Append the current character to the current row in the wave pattern
+//         wavePattern[currentRow] += name.charAt(i) + " ";
+
+//         // Move to the next row or previous row based on the direction
+//         if (forward) {
+//             currentRow++;
+//             // Reverse direction if reached the last row
+//             if (currentRow === rows) {
+//                 forward = false;
+//                 currentRow -= 2;
+//             }
+//         } else {
+//             currentRow--;
+//             // Reverse direction if reached the first row
+//             if (currentRow === -1) {
+//                 forward = true;
+//                 currentRow += 2;
+//             }
+//         }
+//     }
+
+//     // Print the wave pattern
+//     for (let i = 0; i < rows; i++) {
+//         console.log(wavePattern[i]);
+//     }
+// }
+
+// // Test Case 1
+// const rows = 5;
+// const name = "10kcoders";
+// printWavePattern(rows, name);
+
+
+// 1) Write a program to print the prime number pattern based on number of rows
+
+// Input: Enter number of rows: 3
+
+// Output:
+
+// 2
+// 3 5
+// 7 11 13
+
+// var r=3;
+// var p="";
+
+// for(i=1;i<=50;i++){
+//    var c=0
+//    for(j=2;j<=i;j++){
+//     if(i%j==0){
+//         c+=1
+//     }
+//    }
+   
+//    if(c==1){
+//     // console.log(i);
+//    }
+// }
+// for(k=1;k<=r;k++){
+//     p=p+i;
+//     p=p+"/n"
+// }
+// console.log(p);
+
+
+// // Take input from the user
+// const rows = parseInt(prompt("Enter the number of rows:"));
+
+// // Initialize variables
+// let currentNumber = 2; // Start with the first prime number
+// let primeCount = 0; // Count of prime numbers found
+
+// // Loop through each row
+// for (let i = 1; i <= rows; i++) {
+//     let rowOutput = ""; // Initialize the output for the current row
+
+//     // Loop to find prime numbers for the current row
+//     while (primeCount < i) {
+//         let isPrime = true;
+
+//         // Check if the current number is prime
+//         for (let j = 2; j < currentNumber; j++) {
+//             if (currentNumber % j === 0) {
+//                 isPrime = false;
+//                 break;
+//             }
+//         }
+
+//         // If the current number is prime, add it to the row output
+//         if (isPrime) {
+//             rowOutput += currentNumber + " ";
+//             primeCount++;
+//         }
+
+//         // Move to the next number
+//         currentNumber++;
+//     }
+
+//     // Print the row output
+//     console.log(rowOutput);
+// }
+
+// -----------------------------------------------------------------------
+// let a= [1,2,2,3,3,3,3,3,4,4,5,5,5,5,5,5,5]
+// let b={};
+// for(i=0; i<a.length; i++){
+//   if(b[a[i]]){
+//   b[a[i]]++
+//   }else{
+//     b[a[i]]=1
+//   }
+// }
+// console.log(b)
+// let c=0
+// for(i in b){
+//   if(b[i]>c){
+//     c=b[i]
+//   }
+// }
+// let d=0;
+// for(i in b){
+//   if(b[i]===c){
+//     d=i
+//   }
+// }
+
+// console.log(c)
+// console.log(d)
+
+// -----------------------------------------------------------------------
+// function isPrimeNumber(num) {
+//     let c = 0;
+//     for (let i = 1; i <= num; i++) {
+//         if (num % i === 0)
+//             c++;
+//     }
+//     return c === 2;
+// }
+
+// function printPrimeNumbersTriangle(n) {
+//     let c = 2;
+//     for (let i = 1; i <= n; i++) {
+//         for (let j = 1; j <= i; j++) {
+//             while (!isPrimeNumber(c)) {
+//                 c++;
+//             }
+//             console.log(c + " ");
+//             c++;
+//         }
+//         console.log("/n");
+//     }
+// }
+
+
+// function isPrime(num) {
+//     for (let i = 2; i <= Math.sqrt(num); i++) {
+//         if (num % i === 0) return false;
+//     }
+//     return num > 1;
+// }
+
+// function printPrimePattern(n) {
+//     let c = 1;
+//     for (let i = 1; i <= n; i++) {
+//         for (let j = 1; j <= i; j++) {
+//             while (!isPrime(c)) c++;
+//             process.stdout.write(c + " ");
+//             c++;
+//         }
+//         console.log();
+//     }
+// }
+
+// Example usage:
+// const readline = require('readline').createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// });
+
+// readline.question('Enter the number of rows for the prime number triangle: ', n => {
+//   printPrimeNumbersTriangle(parseInt(n));
+//   readline.close();
+// });
+
+// Note: The above commented code can be used to read input from the user in a Node.js environment.
+
+
+
+
+
+
+
+
+// 2) Write a program to print the most repeated digit in the given number
+
+// Input : Enter a number: 91535315
+
+// Output: 5 is the most repeated digit in 91535315
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         // ---------------------------------------PATTERN--------------------------------
+
+// i=0 thiskuntey j<i pettali ledantey i=1 thiskuntey j<=i
+// let r=3;
+// for(i=1;i<=r;i++){
+//     b=""
+//     for(j=0;j<i;j++){
+//      b=b+"*"
+//     }
+//     console.log(b);
+// }
+
+// ---------------------------------------PATTERN--------------------------------
+// k=3
+// for(i=1;i<=k;i++){
+//  b=""
+// for(j=1;j<=i;j++){
+//    b=b+"*"
+// }
+// console.log(b);
+// } 
+
+// // output:  *
+//             **
+//             ***
+
+// ---------------------------------------PATTERN--------------------------------
+//.......................................
+// //     pattern reverse
+// k=3
+// for(i=k;i>=1;i--){
+//     b=""
+//     for(j=1;j<=i;j++){  
+//         b=b+"*"
+//     }
+//     console.log(b);
+// }
+// output : ***
+//          **
+//          *
+
+// ---------------------------------------PATTERN--------------------------------
+// let r=3;
+// for(i=1;i<=r;i++){
+//    let b=""
+//     for(j=r;j>i;j--){
+//         b=b+" "
+//     }
+//         for(k=1;k<=i;k++){
+//             b=b+"*"
+//     }
+//     console.log(b);
+// }
+
+// output :  *
+//          **
+//         *** 
+
+// ---------------------------------------PATTERN--------------------------------
+//  for reverse printing from 4 to 4321
+
+// var k=4
+// for(i=k;i>=1;i--){
+//     var s=""
+//     for(j=k;j>=i;j--){
+//       s=s+j
+//     }
+//     console.log(s);
+// }
+// output:4
+//        43
+//        432
+//        4321
+// ---------------------------------------PATTERN--------------------------------
+// let r = 4;
+// // Print upper triangle
+// for (let i=1;i<=r;i++){
+//     let b = ""
+//     for (let j=r;j>i;j--){
+//         b += " ";
+//     }
+//     for (let k=1;k<=i;k++){
+//         b += "* ";
+//     }
+//     console.log(b); 
+// }
+// // Print lower triangle
+// for (let i=r-1;i>=1;i--){
+//     let b = ""; 
+//     for (let j=r-1;j>=i;j--){
+//         b += " ";
+//     }
+//     for (let k=1;k<=i;k++){
+//         b += "* ";
+//     }
+//     console.log(b); 
+// }
+
+//output:
+//    *
+//   * *
+//  * * *
+// * * * *
+//  * * *
+//   * *
+//    *   
+
+// ---------------------------------------PATTERN--------------------------------
+// /..........  hollow pattern ...............
+// let r=6;
+// for(i=1;i<=r;i++){
+//    let b=""
+//     for(j=1;j<=r;j++){
+//         if(i==1 || i===r || j===1 || j===r){
+//             b=b+"*"
+//         }else{
+//             b=b+" "
+//         }
+//     }
+//     console.log(b);
+// }
+
+// output :
+// ******
+// *    *
+// *    *
+// *    *
+// *    *
+// ******
+
+
+// ---------------------------------------PATTERN--------------------------------
+// let a=5;
+// for (let i=1;i<=a;i++){
+//     let b="";
+//     for (let j=1;j<=i;j++){
+//         if (j === 1 || j === i || i === a) {
+//             b =b +"* ";
+//         } else {
+//             b = b + "  ";
+//         }
+//     }
+//     console.log(b);
+// }
+    
+// output :
+// * 
+// * * 
+// *   * 
+// *     * 
+// * * * * *     
+
+// ------------------------------------------------------PATTERN PRINTING----------------------------------------------
+// function printPattern(n) {
+   
+//     for (let i = 1; i <= n; i++) {
+//         let line = '';
+//         for (let j = 1; j <= n; j++) {
+//             if (i === 1 || i === n || j === 1 || j === n)
+//                 line += "* ";
+//             else
+//                 line += "  ";
+//         }
+//         console.log(line);
+//     }
+// }printPattern(5)
+
+// ---------------------------------------PATTERN--------------------------------
+
+// A
+// b C
+// d E f
+// G h I j
+
+
+
+// let pattern = '';
+// let index = 0;
+// const rows = 4;  // Change this value to print the desired number of lines
+
+// let currentRow = 1;
+
+// for (let row = 0; row < rows; row++) {
+//     for (let i = 0; i < currentRow; i++) {
+//         if (index >= 26) break;  // There are 26 letters in the English alphabet
+
+//         // Calculate the ASCII value of the current letter
+//         let asciiValue = 65 + index;  // 65 is the ASCII value of 'A'
+
+//         // Determine if the letter should be uppercase or lowercase
+//         if (index % 2 === 0) {
+//             pattern += String.fromCharCode(asciiValue);  // Uppercase
+//         } else {
+//             pattern += String.fromCharCode(asciiValue + 32);  // Lowercase (ASCII value of 'a' is 97 which is 65 + 32)
+//         }
+
+//         if (i < currentRow - 1) {
+//             pattern += ' ';
+//         }
+//         index++;
+//     }
+//     pattern += '\n';
+//     currentRow++;  // Increase the number of letters per line
+// }
+
+// console.log(pattern);
+
+// ---------------------------------------PATTERN--------------------------------
+// ---------------------------------------PATTERN--------------------------------
+// ---------------------------------------PATTERN--------------------------------
+// ---------------------------------------PATTERN--------------------------------
+// ---------------------------------------PATTERN--------------------------------
+
+//.............................................
+    </script>
+</body>
+</html>
